@@ -1,0 +1,2 @@
+Requirement already satisfied: Django in c:\python27\lib\site-packages (1.11.29)
+Requirement already satisfied: pytz in c:\python27\lib\site-packages (from Django) (2020.1)

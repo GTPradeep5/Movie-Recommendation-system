@@ -1,0 +1,221 @@
+number,movie_id,user_id,ratings
+1,10,10,10
+2,10,None,10
+3,Toy Story (1995),10,10
+4,Sabrina (1995),10,10
+5,Waiting to Exhale (1995),10,10
+6,Toy Story (1995),10,10
+7,Father of the Bride Part II (1995),10,10
+8,Father of the Bride Part II (1995),10,10
+9,Father of the Bride Part II (1995),10,10
+10,Father of the Bride Part II (1995),10,10
+11,Father of the Bride Part II (1995),10,10
+12,Tom and Huck (1995),10,10
+13,Toy Story (1995),10,2
+14,Jumanji (1995),10,4
+15,Grumpier Old Men (1995),10,6
+16,Waiting to Exhale (1995),10,8
+17,Father of the Bride Part II (1995),10,10
+18,Waiting to Exhale (1995),10,4
+19,Toy Story (1995),11,2
+20,Toy Story (1995),10,4
+21,Toy Story (1995),11,4
+22,Toy Story (1995),11,6
+23,Toy Story (1995),11,8
+24,Toy Story (1995),11,10
+25,Heat (1995),11,6
+26,Toy Story (1995),11,2
+27,Toy Story (1995),11,2
+28,Toy Story (1995),11,2
+29,Toy Story (1995),11,2
+30,Heat (1995),11,2
+31,,11,2
+32,,11,6
+33,,12,4
+34,,12,8
+35,,12,2
+36,Toy Story (1995),12,2
+37,Grumpier Old Men (1995),12,6
+38,Waiting to Exhale (1995),12,8
+39,Father of the Bride Part II (1995),12,6
+40,Tom and Huck (1995),1,8
+41,Toy Story (1995),1,6
+42,Waiting to Exhale (1995),1,10
+43,Grumpier Old Men (1995),1,4
+44,Sudden Death (1995),1,8
+45,Toy Story 2 (1999),15,8
+46,shrek (2001),15,8
+47,The Incredibles (2004),15,8
+48,Toy Story 3 (2010),15,8
+49,Finding Nemo (2003),15,8
+50,The Dark Knight (2008),15,8
+51,Big Hero 6 (2014),15,8
+52,Shrek 2 (2004),15,8
+53,Toy Story (1995),16,8
+54,Toy Story 2 (1999),16,8
+55,Toy Story 3 (2010),16,8
+56,The Incredibles (2004),16,8
+57,Finding Nemo (2003),16,10
+58,Frozen (2013),16,8
+59,Big Hero 6 (2014),16,8
+60,Tangled (2010),16,8
+61,Ratatouille (2007),16,8
+62,Bolt (2008),16,8
+63,Rango (2011),16,8
+64,Toy Story (1995),17,8
+65,Toy Story 2 (1999),17,8
+66,shrek (2001),17,8
+67,Toy Story 3 (2010),17,10
+68,The Incredibles (2004),17,8
+69,Finding Nemo (2003),17,10
+70,The Lion King (1994),17,8
+71,Frozen (2013),17,6
+72,Chicken Run (2000),17,8
+73,The Matrix (1999),17,4
+74,Casino Royale (2006),17,4
+75,Toy Story (1995),18,8
+76,Toy Story 2 (1999),18,10
+77,Toy Story 3 (2010),18,8
+78,Finding Nemo (2003),18,10
+79,The Incredibles (2004),18,8
+80,"Monsters, Inc. (2001)",18,8
+81,Ratatouille (2007),18,8
+82,The Lion King (1994),18,8
+83,Aladdin (1992),18,8
+84,Terminator 2 (1991),18,6
+85,Casino Royale (2006),18,4
+86,Toy Story (1995),19,8
+87,Toy Story 2 (1999),19,10
+88,Toy Story 3 (2010),19,8
+89,Toy Story 3 (2010),19,8
+90,Finding Nemo (2003),19,10
+91,shrek (2001),19,8
+92,"Monsters, Inc. (2001)",19,8
+93,The Lion King (1994),19,8
+94,Frozen (2013),19,6
+95,Casino Royale (2006),19,6
+96,Aladdin (1992),19,8
+97,Tangled (2010),19,8
+98,Big Hero 6 (2014),19,10
+99,Shrek 2 (2004),19,10
+100,Bolt (2008),19,8
+101,Toy Story (1995),20,10
+102,Toy Story 2 (1999),20,10
+103,Toy Story 3 (2010),20,10
+104,shrek (2001),20,8
+105,Finding Nemo (2003),20,10
+106,The Incredibles (2004),20,8
+107,Ratatouille (2007),20,8
+108,Aladdin (1992),20,8
+109,Chicken Run (2000),20,6
+110,Casino Royale (2006),20,4
+111,Big Hero 6 (2014),20,8
+112,Shrek 2 (2004),20,10
+113,Bolt (2008),20,8
+114,Toy Story (1995),21,8
+115,Toy Story 2 (1999),21,10
+116,shrek (2001),21,8
+117,Finding Nemo (2003),21,10
+118,Toy Story 3 (2010),21,8
+119,The Incredibles (2004),21,8
+120,"Monsters, Inc. (2001)",21,8
+121,The Lion King (1994),21,8
+122,Tangled (2010),21,8
+123,Shrek 2 (2004),21,8
+124,Toy Story (1995),22,10
+125,Toy Story 2 (1999),22,8
+126,Toy Story 3 (2010),22,8
+127,shrek (2001),22,8
+128,Finding Nemo (2003),22,10
+129,The Incredibles (2004),22,8
+130,"Monsters, Inc. (2001)",22,8
+131,The Lion King (1994),22,8
+132,Frozen (2013),22,8
+133,Ratatouille (2007),22,8
+134,Aladdin (1992),22,6
+135,Big Hero 6 (2014),22,8
+136,Tangled (2010),22,8
+137,Shrek 2 (2004),22,8
+138,Bolt (2008),22,8
+139,Toy Story (1995),23,8
+140,Toy Story 2 (1999),23,10
+141,Toy Story 3 (2010),23,10
+142,Finding Nemo (2003),23,10
+143,shrek (2001),23,8
+144,The Incredibles (2004),23,8
+145,The Lion King (1994),23,8
+146,Frozen (2013),23,8
+147,Aladdin (1992),23,8
+148,Chicken Run (2000),23,4
+149,Big Hero 6 (2014),23,8
+150,Tangled (2010),23,8
+151,Shrek 2 (2004),23,8
+152,Bolt (2008),23,8
+153,Toy Story (1995),24,8
+154,Toy Story 2 (1999),24,8
+155,shrek (2001),24,8
+156,Finding Nemo (2003),24,8
+157,The Incredibles (2004),24,8
+158,"Monsters, Inc. (2001)",24,8
+159,Frozen (2013),24,8
+160,Ratatouille (2007),24,10
+161,Chicken Run (2000),24,4
+162,Big Hero 6 (2014),24,8
+163,Tangled (2010),24,8
+164,Shrek 2 (2004),24,10
+165,Bolt (2008),24,8
+166,Toy Story (1995),25,8
+167,shrek (2001),25,8
+168,Finding Nemo (2003),25,10
+169,Toy Story 3 (2010),25,8
+170,The Incredibles (2004),25,8
+171,"Monsters, Inc. (2001)",25,8
+172,Frozen (2013),25,8
+173,The Lion King (1994),25,8
+174,Chicken Run (2000),25,4
+175,Big Hero 6 (2014),25,8
+176,Bolt (2008),25,8
+177,Toy Story 2 (1999),26,8
+178,Toy Story 3 (2010),26,10
+179,Finding Nemo (2003),26,10
+180,"Monsters, Inc. (2001)",26,8
+181,Ratatouille (2007),26,8
+182,Chicken Run (2000),26,4
+183,Aladdin (1992),26,8
+184,Big Hero 6 (2014),26,8
+185,Tangled (2010),26,8
+186,Shrek 2 (2004),26,8
+187,Bolt (2008),26,8
+188,Toy Story (1995),27,8
+189,shrek (2001),27,8
+190,Frozen (2013),27,8
+191,Finding Nemo (2003),27,10
+192,Toy Story 2 (1999),28,10
+193,shrek (2001),28,10
+194,About Time (2013),28,8
+195,Toy Story 2 (1999),29,10
+196,Toy Story 3 (2010),29,10
+197,Toy Story 3 (2010),30,10
+198,Toy Story 3 (2010),30,10
+199,The Incredibles (2004),30,10
+200,Toy Story 2 (1999),30,8
+201,Big Hero 6 (2014),30,8
+202,Toy Story 2 (1999),31,10
+203,Aladdin (1992),31,8
+204,Finding Nemo (2003),32,10
+205,Chicken Run (2000),32,4
+206,Aladdin (1992),32,8
+207,Heat (1995),33,2
+208,Heat (1995),33,2
+209,Finding Nemo (2003),33,8
+210,Frozen (2013),33,6
+211,Toy Story (1995),34,8
+212,Finding Nemo (2003),34,8
+240,Finding Nemo (2003),66,10
+241,Gladiator (2000),66,8
+242,Finding Dory (2016),67,10
+243,Finding Nemo (2003),67,10
+244,Finding Nemo (2003),68,10
+245,Toy Story 2 (1999),68,10
+246,Finding Nemo (2003),69,10
+247,Toy Story 2 (1999),69,8

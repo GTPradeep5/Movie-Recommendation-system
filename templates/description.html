@@ -1,0 +1,532 @@
+{% load static %}
+{% static 'images' as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Description</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/destinations.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/destinations_responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/elements.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="index.html">MovieBot</a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li><a href="/">Home</a></li>
+									
+								</ul>
+							</nav>
+							<div class="header_phone ml-auto">Call us: 00-56 445 678 33</div>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+			<div class="menu_logo"><a href="">MovieBot</a></div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li><a href="inex.html">Home</a></li>
+				
+			</ul>
+		</div>
+		<div class="menu_social">
+			<div class="menu_phone ml-auto">Call us: 00-56 445 678 33</div>
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="background_image" style="background-image:url(/static/images/t2.jpg)"></div>
+	</div>
+
+	<!-- Search -->
+	<br> <br><br><br>
+
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_content">
+							<form action="#" class="home_search_form" id="home_search_form">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+									<button class="home_search_button">Action</button>
+									<button class="home_search_button">Comedy</button>
+									<button class="home_search_button">Romance</button>
+									<button class="home_search_button">Thriller</button>
+									<button class="home_search_button">Animation</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+	<!-- Destinations -->
+	{% for mo in movi%}
+						{%if mo.movie_name == mes%}
+
+	<div class="destinations" id="destinations" style="margin-bottom:0%">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing movie</div>
+					<div class="section_title" style="border: 5px solid black; font-size:3rem;padding:1cm;color:azures"h2>{{mo.movie_name}}</h2></div>
+				</div>
+			</div>
+			<div class="elements" style="margin-top: 0%" >
+				<div class="loaders">
+					<div class="elements_title">Analysis</div>
+			
+					<!-- Loaders -->
+					<div class="row loaders_container">
+						<div class="col-lg-3 loader_col">
+							<!-- Loader -->
+							<div class="loader" data-perc="0.75" >
+								<div class="loader_content">
+									<div class="loader_title">photos taken</div>
+									<div class="loader_subtitle">Etiam nec odio vestibulum est.</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-lg-3 loader_col">
+							<!-- Loader -->
+							<div class="loader" data-perc="0.5">
+								<div class="loader_content">
+									<div class="loader_title">photos taken</div>
+									<div class="loader_subtitle">Etiam nec odio vestibulum est.</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-lg-3 loader_col">
+							<!-- Loader -->
+							<div class="loader" data-perc="0.1">
+								<div class="loader_content">
+									<div class="loader_title">photos taken</div>
+									<div class="loader_subtitle">Etiam nec odio vestibulum est.</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-lg-3 loader_col">
+							<!-- Loader -->
+							<div class="loader" data-perc="0.90">
+								<div class="loader_content">
+									<div class="loader_title">photos taken</div>
+									<div class="loader_subtitle">Etiam nec odio vestibulum est.</div>
+								</div>
+							</div>
+							
+						</div>
+						</div>
+						</div>	</div>
+			<div class="row destinations_row">
+				<div class="col">
+					<div class="destinations_container item_grid">
+						
+						<!-- Destination -->
+						
+						<div class="destination item">
+							
+							<div class="destination_image">
+									
+								<img src="{{mo.poster.url}} " style="width: 100% ; margin-left:25rem;height:33rem;border: 7px solid black;
+
+								border-radius: 7px"  alt="">
+								
+								
+							</div>
+							<br><br>
+										
+							
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="destination_content">
+				<table style="width:100%; background-color:white" border="10">
+					<tr >
+						<td >
+							<div class="destination_title" style="color: black;padding:2rem"><a >Name</a></div>
+						</td>
+						<td>
+					<div class="destination_title" style="color: black;padding:2rem "><a ><font color='grey'>{{mo.movie_name}}</font></a></div>
+				</td>	
+				</tr>
+				<tr>
+					<td><div class="destination_title" style="color: black;padding:2rem"><a> Genres</a></div></td>
+					<td><div class="destination_title" style="color: black;padding:2rem "><a><font color='grey'>{{mo.genres}}</font></a></div></td>
+				</tr>
+				<tr>
+					<td><div class="destination_title" style="color: black; padding:2rem"><a> Description </a></div></td>
+					&nbsp;&nbsp;
+					<td><div class="destination_title" style="color: black;padding:2rem"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color='grey'><div style="text-align: justify">
+							{{mo.description}}
+					</div></font></a></div></td>
+				</tr>
+
+					
+				</table>
+			</div>
+			
+
+			
+
+			<div class="elements" >
+				<div class="loaders">
+					<div class="elements_title">Ratings</div>
+					<div class="row loaders_container">
+					<div class="col-lg-2 loader_col">
+					<form class="login100-form validate-form" action="vbad" method="post">
+					{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent">
+					<span class="fa fa-smile-o" style="font-size: 150px; color:darkred; "></span></button>
+					<div class="loader_subtitle" style="margin-top: 1cm; margin-left:1cm">Very Bad</div>
+					<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden">  
+					</form>
+					</div>
+					<div class="col-lg-2 loader_col" >
+							<form class="login100-form validate-form" action="bad" method="post">
+							{% csrf_token%}<button style="background: transparent; border:none; ; border-color:transparent">							
+							<span class="fa fa-smile-o" style="font-size: 150px; color:red" ></span></button>
+							<div class="loader_subtitle" style="margin-top: 1cm; margin-left:1.4cm" >Bad</div>
+							<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden"> 
+							<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden"> 
+							</form>
+					</div>
+					<div class="col-lg-2 loader_col">
+							<form class="login100-form validate-form" action="mod" method="post">
+							{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent">
+						<span class="fa fa-smile-o" style="font-size: 150px; color:orange "></span></button>
+						<div class="loader_subtitle" style="margin-top: 1cm; margin-left:1cm">Moderate</div>
+						<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden"> 
+						<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden"> 
+						</form>
+					</div>
+					<div class="col-lg-2 loader_col">
+							<form class="login100-form validate-form" action="good" method="post">
+							{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent">
+							<span class="fa fa-smile-o" style="font-size: 150px; color:lime"></span></button>
+							<div class="loader_subtitle" style="margin-top: 1cm; margin-left:1.2cm">Good</div>
+							<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden"> 
+							<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden"> 
+							</form>
+					</div>
+					<div class="col-lg-2 loader_col">
+							<form class="login100-form validate-form" action="vgood" method="post">
+							{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent">
+							<span class="fa fa-smile-o" style="font-size: 150px; color:green"></span></button>
+							<div class="loader_subtitle" style="margin-top: 1cm; margin-left:1cm">Very Good</div>
+							<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden"> 
+							<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					        <input name="user" value="{{ mes1}}" style="visibility: hidden"> 
+							</form>
+					</div>
+					
+					</div>
+					</div>
+					</div>
+		</div>
+		{%endif%}
+			{%endfor%}
+
+
+			
+
+			{% for ra in rat%} 
+
+			{% if ra.user_id == mes1   %}
+			
+			{% if ra.movie_id == mes%}
+
+		
+			
+			{% if ra.ratings == '2'%}
+			<div class="elements" >
+				<div class="loaders" style="margin-top: -5cm; margin-bottom:-3cm">
+					<div class="elements_title" style="margin-left: 2cm">Your Ratings</div>
+					<div class="row loaders_container">
+					<div class="col-lg-2 loader_col">
+					<form class="login100-form validate-form" action="vbad" method="post">
+					{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent;margin-left: 2cm">
+					<span class="fa fa-smile-o" style="font-size: 150px; color:darkred; "></span></button>
+					<div class="loader_subtitle" style="margin-top: 1cm; margin-left:3cm">Very Bad</div>
+					<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden">  
+					</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			{%endif%}
+			{% if ra.ratings == '4'%}
+			<div class="elements" >
+				<div class="loaders" style="margin-top: -5cm; margin-bottom:-3cm">
+					<div class="elements_title " style="margin-left: 2cm">Your Ratings</div>
+					<div class="row loaders_container">
+					<div class="col-lg-2 loader_col">
+					<form class="login100-form validate-form" action="vbad" method="post">
+					{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent;margin-left: 2cm">
+					<span class="fa fa-smile-o" style="font-size: 150px; color:red; "></span></button>
+					<div class="loader_subtitle" style="margin-top: 1cm; margin-left:3cm">Bad</div>
+					<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden">  
+					</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			{%endif%}
+
+			{% if ra.ratings == '6'%}
+			<div class="elements" >
+				<div class="loaders" style="margin-top: -5cm; margin-bottom:-3cm">
+					<div class="elements_title" style="margin-left: 2cm">Your Ratings</div>
+					<div class="row loaders_container">
+					<div class="col-lg-2 loader_col">
+					<form class="login100-form validate-form" action="vbad" method="post">
+					{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent;margin-left: 2cm">
+					<span class="fa fa-smile-o" style="font-size: 150px; color:orange; "></span></button>
+					<div class="loader_subtitle" style="margin-top: 1cm; margin-left:3cm">Moderate</div>
+					<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden">  
+					</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			{%endif%}
+
+			{% if ra.ratings == '8'%}
+			<div class="elements" >
+				<div class="loaders" style="margin-top: -5cm; margin-bottom:-3cm">
+					<div class="elements_title" style="margin-left: 2cm">Your Ratings</div>
+					<div class="row loaders_container">
+					<div class="col-lg-2 loader_col">
+					<form class="login100-form validate-form" action="vbad" method="post">
+					{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent;margin-left: 2cm">
+					<span class="fa fa-smile-o" style="font-size: 150px; color:lime; "></span></button>
+					<div class="loader_subtitle" style="margin-top: 1cm; margin-left:3cm">Good</div>
+					<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden">  
+					</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			{%endif%}
+
+			{% if ra.ratings == '10'%}
+			<div class="elements" >
+				<div class="loaders" style="margin-top: -5cm; margin-bottom:-3cm">
+					<div class="elements_title" style="margin-left: 2cm">Your Ratings</div>
+					<div class="row loaders_container">
+					<div class="col-lg-2 loader_col">
+					<form class="login100-form validate-form" action="vbad" method="post">
+					{% csrf_token%}<button style="background: transparent; border:none; border-color:transparent;margin-left: 2cm">
+					<span class="fa fa-smile-o" style="font-size: 150px; color:green; "></span></button>
+					<div class="loader_subtitle" style="margin-top: 1cm; margin-left:3cm">Very Good</div>
+					<input name="movie_id" value="{{ mo.movie_name}}" style="visibility: hidden">  
+					<input name="user" value="{{ mes1}}" style="visibility: hidden">  
+					</form>
+					</div> 
+					</div>
+				</div>
+			</div>
+			
+			{%endif%}
+
+
+
+			{%endif%}
+			{%endif%}
+	
+			
+			{% endfor %}
+			
+				
+					
+
+			
+
+			
+		</div>
+	</div>
+	
+	
+
+	<!-- Footer -->
+<div>
+	<footer class="footer">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/static/images/b17.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter">
+						<div class="newsletter_title_container text-center">
+							<div class="newsletter_title">Subscribe to our newsletter to get the latest trends & news</div>
+							<div class="newsletter_subtitle">Join our database NOW!</div>
+						</div>
+						<div class="newsletter_form_container">
+							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
+								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+								</div>
+								<div><button class="newsletter_button">subscribe</button></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_contact_row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="/static/images/sign.svg" alt=""></div>
+								<div class="footer_contact_title">give us a call</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>Office Landline: +44 5567 32 664 567</li>
+										<li>Mobile: +44 5567 89 3322 332</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="/static/images/trekking.svg" alt=""></div>
+								<div class="footer_contact_title">come & drop by</div>
+								<div class="footer_contact_list">
+									<ul style="max-width:190px">
+										<li>4124 Barnes Street, Sanford, FL 32771</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="/static/images/around.svg" alt=""></div>
+								<div class="footer_contact_title">send us a message</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>youremail@gmail.com</li>
+										<li>Office@yourbusinessname.com</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	</div>
+</div>
+
+
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/destinations.js' %}"></script>
+<script src="{% static 'js/destinations.js' %}"></script>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/progressbar/progressbar.min.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA' %}"></script>
+<script src="{% static 'js/elements.js' %}"></script>
+</body>
+</html>
